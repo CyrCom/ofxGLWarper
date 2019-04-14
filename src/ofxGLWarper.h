@@ -67,6 +67,7 @@ public:
     glm::vec4 fromWarpToScreenCoord(glm::vec4 &position);
 
     void selectCorner(CornerLocation cornerLocation);
+    void deselectCorner(); // corners will all be unselected
     void setCorner(CornerLocation cornerLocation, glm::vec2 &onScreenLocation);
     void setCorner(CornerLocation cornerLocation, float onScreenLocationX, float onScreenLocationY);
     void moveCorner(CornerLocation cornerLocation, glm::vec2 &moveBy);

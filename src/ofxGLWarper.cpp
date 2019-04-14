@@ -357,6 +357,10 @@ void ofxGLWarper::selectCorner(CornerLocation cornerLocation){
     selectedCorner = cornerLocation;
 }
 //--------------------------------------------------------------
+void ofxGLWarper::deselectCorner(){
+    selectedCorner = -1;
+}
+//--------------------------------------------------------------
 void ofxGLWarper::setCorner(CornerLocation cornerLocation, glm::vec2 &onScreenLocation){
     corners[cornerLocation] = onScreenLocation;// glm::vec2(width, height);
     processMatrices();
